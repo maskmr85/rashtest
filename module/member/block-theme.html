@@ -1,0 +1,64 @@
+<!-- IF Member -->
+<center>
+<img src="[avatar]" height="79" width="80"></center><br>
+<b>[name]</b> خوش آمديد! 
+
+<hr style="border: 1px dotted rgb(0, 0, 0);" width="90%" align="center" size="1">
+<img src="[theme_url]/img/li.gif">  
+<a href="index.php?module=member&action=profile">صفحه كاربري</a><br>
+<img src="[theme_url]/img/li.gif">  
+<a href="index.php?module=member&action=profile&task=edit">ويرايش پروفايل</a><br>
+<img src="[theme_url]/img/li.gif">  
+<a title="شما [msg] پیام خوانده نشده دارید!" href="index.php?module=member&action=inbox">پیام 
+های خصوصی (<b>[msg]</b>)</a><br>
+<img src="[theme_url]/img/li.gif">  
+<a href="index.php?module=member&action=outbox">صندوق خروجی</a><br>
+<img src="[theme_url]/img/li.gif"><a href="index.php?module=member&action=sendpm"> 
+ارسال پیغام خصوصی</a><br>
+<img src="[theme_url]/img/li.gif">  
+<a href="index.php?module=member&action=logout">خروج از سیستم</a>
+<!-- ENDIF Member -->
+<!-- IF Guest -->
+<font class="content">
+<img src="[theme_url]/img/user.gif">
+<b>كاربر مهمان</b> خوش آمديد! 
+</font>
+<hr style="border: 1px dotted rgb(0, 0, 0);" width="90%" align="center" size="1">
+<form autocomplete="on" method="post" action="index.php?module=member&action=login">
+<table  width="146">
+<tbody>
+<tr>
+<td width="65">نام کاربری</td>
+<td><input size="13" tabindex="1" name="user" class="inp1"></td>
+</tr>
+<tr>
+<td width="65" height="26">کلمه عبور</td>
+<td height="26">
+
+<input size="13" tabindex="1" name="pass" class="inp1" type="password"></td>
+
+</tr>
+<!-- IF LoginSec -->
+<tr>
+<td width="65" height="26">كد امنيتي:</td>
+<td height="26"><INPUT  name="RashCMS"  tabindex="3" size="13"></td>
+</td>
+</tr>
+<tr>
+<td colspan=2><center><span id="Rashimg" style="cursor:hand"  onclick=Rashimg("New") colspan=2>
+<img style="cursor:hand" onclick=Rashimg("New") border="0" src="img.php" id="imagerash" ></td></td>
+</span></center>
+</tr>
+<!-- ENDIF LoginSec -->
+<tr>
+<td colspan="2" height="26">
+<center><input value="ورود" name="submit" class="inp1" type="submit"></center>
+</td>
+<img src="[theme_url]/img/li.gif">
+<a href="index.php?module=member&action=register">عضويت در سايت</a><br>
+<img src="[theme_url]/img/li.gif">
+<a href="index.php?module=member&action=forget">كلمه عبور را فراموش كرده ام</a></tr>
+</tbody>
+</table>
+</form>
+<!-- ENDIF Guest -->
